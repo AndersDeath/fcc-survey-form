@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1 id="title">freeCodeCamp SurveyForm</h1>
+            <p id="description">Big thanks for filling this form</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-field">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" placeholder="Enter your name..." name="name" required id="name">    
+            </div>
+
+            <div class="form-field">
+                <label for="email" id="email-label">Email</label>
+                <input type="email"  placeholder="Enter your email..." name="email" required id="email">    
+            </div>
+
+            <div class="form-field">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="number"  placeholder="Enter your age..." min="18" max="118" required id="number">    
+            </div>
+
+            <div class="form-field">
+                <label for="dropdown">Select your city</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="0">Saint-Petersburg</option>
+                    <option value="1">London</option>
+                    <option value="2">Berlin</option>
+                    <option value="3">Rome</option>
+                    <option value="4">New York</option>
+                 </select>
+            </div>
+
+            <div class="form-field">
+                <p>What is your role?</p>
+                <input type="radio" name="role" value="programmer" id="role-programmer" checked> 
+                <label for="role-programmer">Programmer</label>
+                <input type="radio" name="role" value="qa" id="role-qa">
+                <label for="role-qa">QA</label>
+                <input type="radio" name="role" value="product-manager" id="role-product-manager">
+                <label for="role-product-manager">Product Manager</label>
+                <input type="radio" name="role" value="nobody" id="role-nobody">
+                <label for="role-nobody">Nobody</label>
+            </div>
+            <div class="form-field">
+                <p>What about your prefer transport?</p>
+                <div>
+                    <input type="checkbox" id="bus" name="transport" value="huey">
+                    <label for="bus">Bus</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="airplane" name="transport" value="airplane">
+                    <label for="airplane">Airplane</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="taxi" name="transport" value="taxi">
+                    <label for="taxi">Taxi</label>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Enter your comment..."></textarea>
+            </div>
+
+            <button id="submit" type="submit">Send</button>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
