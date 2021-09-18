@@ -31,6 +31,10 @@ h3 {
     font-size: 18px;
 }
 
+hr {
+    width: 100%;
+}
+
 
 .container {
     margin: 0 0 20px 0;
@@ -85,7 +89,9 @@ header p#description {
     margin: 5px 0 5px 0;
 }
 
-.form-field label {
+.form-field label,
+.form-field .form-radio-label,
+.form-field .form-checkbox-label {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -118,6 +124,28 @@ header p#description {
     background-position-y: 5px;
     background-color: #fff;
     cursor: pointer;
+}
+
+.form-field .form-radio,
+.form-field .form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field .form-radio input[type="radio"],
+.form-field .form-checkbox input[type="checkbox"]  {
+    transform: scale(1.3);
+    margin-top: -1px;
+    margin-right: 8px;
+}
+
+.form-field .form-radio label,
+.form-field .form-checkbox label  {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 @media  (max-width: 800px) {
